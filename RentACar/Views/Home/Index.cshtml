@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<!-- Jumbotron with Carousel-->
+<div id="carousel-cars" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item bg bg1 active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h4>Get only best for you!</h4>
+                    <p>Click below to see our offer.</p>
+                    @Html.ActionLink("Car list", "CarList", null, new { @class = "btn btn-primary" })
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="item bg bg2">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h4>Register today!</h4>
+                    <p>Get your car in two steps!</p>
+                    @Html.ActionLink("Register", "Register", "Auth", new { area = "Account" }, new { @class = "btn btn-primary" })
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="item bg bg3">
+            <div class="carousel-caption">
+                <h4>Discover power!</h4>
+                <p>Our cars are one of the best on market...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-cars" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-cars" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Offers -->
+<div class="offers-style">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-4">
+                <div class="offer">
+                    <!--<img src="" alt="" />-->
+                    <div class="caption">
+                        <h4><strong>Option list 1</strong></h4>
+                        <p>
+                            <ul class="list-group">
+                                <li class="list-group-item offer-options">Option 1</li>
+                                <li class="list-group-item offer-options">Option 2</li>
+                                <li class="list-group-item offer-options">Option 3</li>
+                                <li class="list-group-item offer-options">Option 4</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="offer">
+                    <div class="caption">
+                        <h4><strong>Option list 2</strong></h4>
+                        <p>
+                            <ul class="list-group">
+                                <li class="list-group-item offer-options">Option 1</li>
+                                <li class="list-group-item offer-options">Option 2</li>
+                                <li class="list-group-item offer-options">Option 3</li>
+                                <li class="list-group-item offer-options">Option 4</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="offer">
+                    <div class="caption">
+                        <h4><strong>Option list 3</strong></h4>
+                        <p>
+                            <ul class="list-group">
+                                <li class="list-group-item offer-options">Option 1</li>
+                                <li class="list-group-item offer-options">Option 2</li>
+                                <li class="list-group-item offer-options">Option 3</li>
+                                <li class="list-group-item offer-options">Option 4</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Brands -->
+<div class="brands-style">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <img src="~/Images/Brands/bmw-logo.png" class="brand-img" />
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <img src="~/Images/Brands/honda-logo.png" class="brand-img" />
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <img src="~/Images/Brands/hyundai-logo.png" class="brand-img" />
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <img src="~/Images/Brands/mercedes-logo.png" class="brand-img" />
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <img src="~/Images/Brands/nissan-logo.png" class="brand-img" />
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <img src="~/Images/Brands/toyota-logo.png" class="brand-img" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- User's feedback -->
+<div class="feedback-style">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <blockquote>
+                    <p>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                        iaculis eu lacus nunc mi elit,vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    </p>
+
+                    <p><small>Ivica, Canada</small></p>
+                </blockquote>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <blockquote>
+                    <p>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus
+                        nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    </p>
+                    <p><small>John, UK</small></p>
+                </blockquote>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <blockquote>
+                    <p>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc
+                        mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    </p>
+                    <p><small>Antonio, Italy</small></p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
